@@ -17,6 +17,8 @@
 
     <!--**********BODY*********-->
     <body>
+        
+        <p></p>
 
 
 
@@ -24,6 +26,18 @@
         <!--**********JAVASCRIPT*********-->
             <script type="text/javascript">
 
+                $.ajax("message.txt")
+                    .done(function(data) {
+                    
+                    $("p").html(data);
+                    
+                    })
+                    .fail(function() {
+                    
+                        alert("Couldn't get message");
+                    
+                });
+                
                 var regex = /is/;
 
                 var string = "Regex is great!";
