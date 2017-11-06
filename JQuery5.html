@@ -1,0 +1,67 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>jQuery Web Dev 2.0 Course</title>
+
+        <link rel="stylesheet" type="text/css" href="jQuery5.css">
+
+        <script src="jquery-3.2.1.min.js"></script>
+
+
+
+    </head>
+
+
+    <!--**********BODY*********-->
+    <body>
+
+
+        <div id="circle">
+
+            <!--Will display before click, not display after click-->
+            <p id="click-circle">Click this circle!</p>
+
+            <!--Will not display before click, will display after click-->
+            <p id="circle-clicked">You just clicked a circle! Woohoo!</p>
+
+        </div>
+
+
+
+
+
+
+
+        <!--**********JAVASCRIPT*********-->
+            <script type="text/javascript">
+
+                $("#circle").click(function () {
+
+                    var newColor = "#ff0000";
+
+                    $("#click-circle").css("display", "none");
+
+                    $(this)
+                        .animate({
+
+                            marginLeft: "200px",
+                            marginTop: "200px"
+
+                        }, 1500, function () {
+
+                        $("#circle-clicked").css("display", "block");
+
+                    })
+
+                    });
+
+
+            </script>
+
+
+    </body>
+
+    </html>

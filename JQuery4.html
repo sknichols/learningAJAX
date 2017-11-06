@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>jQuery Web Dev 2.0 Course</title>
+
+        <link rel="stylesheet" type="text/css" href="jQuery4.css">
+
+        <script src="jquery-3.2.1.min.js"></script>
+
+
+
+    </head>
+
+
+    <!--**********BODY*********-->
+    <body>
+
+        <p id="graf">This is some text</p>
+        <button id="toggle">Toggle Text</button>
+        <button id="hidden">Bring the text back</button>
+
+        <!--**********JAVASCRIPT*********-->
+            <script type="text/javascript">
+
+
+                //makes the text display toggle on and off
+
+                var textShowing = true;
+
+                $("#toggle").click(function () {
+
+                    if(textShowing) {
+
+                        $("#graf").fadeOut(function () {
+
+                            textShowing = false;
+
+                        })
+
+                    } else {
+
+                        $("#graf").fadeIn(function () {
+
+                            textShowing = true;
+
+                        })
+
+                    }
+
+                });
+
+
+            </script>
+
+
+    </body>
+
+    </html>

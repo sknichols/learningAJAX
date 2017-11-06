@@ -1,0 +1,35 @@
+
+
+    #circle {
+        
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: #431e58;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    #circle-clicked {
+        
+        display: none;
+        padding: 100px 15px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        
+    }
+    
+    #click-circle {
+    
+        padding: 100px 15px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        
+    }

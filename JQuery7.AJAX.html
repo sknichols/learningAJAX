@@ -1,0 +1,56 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>jQuery Web Dev 2.0 Course</title>
+
+        <link rel="stylesheet" type="text/css" href="jQuery7.css">
+
+        <script src="jquery-3.2.1.min.js"></script>
+
+
+
+    </head>
+
+
+    <!--**********BODY*********-->
+    <body>
+
+
+
+
+        <!--**********JAVASCRIPT*********-->
+            <script type="text/javascript">
+
+                var regex = /is/;
+
+                var string = "Regex is great!";
+
+
+                //Asks, "Does the word 'is' exist in the string called "regex"?
+                //This match is case-sensitive
+                var result = string.match(regex);
+
+                alert(result);
+
+                //searches for 'e', but also looks for how many 'e's there are; the g stands for "global"
+                var regex2 = /e/g;
+
+                var string2 = "Regex is great!";
+
+
+                //Asks, "Does the word 'is' exist in the string called "regex"?
+                //This match is case-sensitive
+                var result2 = string.match(regex);
+
+                alert(result2);
+
+
+            </script>
+
+
+    </body>
+
+    </html>

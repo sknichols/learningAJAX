@@ -1,0 +1,24 @@
+
+
+    #circle {
+        
+        width: 150px;
+        height: 150px;
+        -webkit-border-radius:50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background-color: green;
+    }
+    
+    .square {
+    
+        width: 150px;
+        height: 150px;
+        background-color: red;
+    
+    }
+    
+    #circle, .square {
+        
+        margin: 15px;
+    }

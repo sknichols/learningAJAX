@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>jQuery Web Dev 2.0 Course</title>
+
+        <link rel="stylesheet" type="text/css" href="jQuery2.css">
+
+        <script src="jquery-3.2.1.min.js"></script>
+
+
+
+    </head>
+
+
+    <!--**********BODY*********-->
+    <body>
+
+
+        <div id="circle"></div>
+
+        <p>This is some text</p>
+
+        <div class="square"></div>
+
+        <div class="square" id="square2"></div>
+
+
+        <iframe src="http://eiffelsites.com/"></iframe>
+
+        <!--**********JAVASCRIPT*********-->
+            <script type="text/javascript">
+
+                /*$ means "select", and you put in the id/class just as you do in css to tell jQuery what to select. This is the equivalent of "document.getElementById("circle")...*/
+//                $("#circle").click(function() {
+//
+//                    $("p").html("This text has changed");
+//                })
+
+
+                //This alerts with the content of any "p" when the circle is clicked
+                $("#circle").click(function() {
+
+                    alert($("p").html());
+                })
+
+                //This alerts with the content of any "p" when the user hovers over the square
+               /* $(".square").hover(function() {
+
+                    alert($("p").html());
+                })*/
+
+                //This alters the link of any "iframe" when the user hovers over it
+                $("#square2").hover(function() {
+
+                    $("iframe").attr("src", "http://eiffelsites.com/our-websites/");
+
+                })
+
+
+
+
+
+                /*
+                This is how you check to see if jQuery is installed correctly:
+
+                if (typeof jQuery == "undefined") {
+
+
+                    alert("jQuery is not installed");
+
+                } else {
+
+                    alert("jQuery is installed correctly");
+                }
+
+                */
+
+            </script>
+
+
+    </body>
+
+    </html>
